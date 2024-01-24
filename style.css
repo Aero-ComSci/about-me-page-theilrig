@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+}
+
+/* Additional styles to ensure no vertical scrolling */
+body {
+    overflow-y: hidden;
+}
+
+/* Adjustments for smaller screens if needed */
+@media (max-width: 600px) {
+    #content {
+        grid-template-columns: 1fr; /* Adjust for single column on smaller screens */
+    }
+}
+
+
+#leftContent {
+    background-image: url("Images/space.jpg");
+    /* background-color: red; */
+}
+
+.contentBlock {
+    margin: 10px;
+    border-radius: 3%;
+    height: 90%;
+}
+
+p {
+    font-size: 11px; /* Specify the unit for font-size */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: whitesmoke;
+}
+
+#portraitImg {
+    display: block;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50px;
+    height: 300px;
+    border: 5px solid #ffffff;
+}
+
+.contact{
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.rightContentBlock{
+    border-radius: 3%;
+    border: 3px solid whitesmoke;
+    margin-top: 15px;
+}
+
+#codeSnippet{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#purpleText{
+    color: purple;
+}
+
+#orangeText{
+    color: orange;
+}
+
+#yellowText{
+    color: rgb(216, 184, 0);
+}
+
+#greenText{
+    color: rgb(85, 168, 85);
+}
+
