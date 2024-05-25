@@ -1,0 +1,255 @@
+:root {
+    --leftMainColor: #d13333;
+    --bgColor: #F6EEC9;
+    --about-color: #A1DD70;
+    --projects-color: #028391;
+    --resume-color: #FF7F3E;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--bgColor);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.fullContent {
+    display: flex; 
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box; /* Ensures padding is included in element's total width/height */
+}
+
+.leftContent {
+    flex: 2; /* Sets the width proportion of leftContent to 2/10 of fullContent */
+    max-width: 20%; /* Ensures leftContent does not exceed 20% of fullContent */
+}
+
+.leftContent h2{
+    font-size: 15px;
+}
+
+.rightContent {
+    flex: 8; 
+    padding: 20px;
+    max-width: 80%; /* Ensures rightContent does not exceed 80% of fullContent */
+}
+
+#mainBar {
+    background-color: var(--leftMainColor);
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 20px; 
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--leftMainColor);
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Image Container Styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#portrait {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Button Styles */
+.homeButton {
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+}
+
+.homeButton i {
+    font-size: inherit;
+}
+
+#homeIcon {
+    background-color: var(--leftMainColor);
+}
+
+#homeIcon:hover {
+    color: var(--leftMainColor);
+    background-color: white;
+}
+
+.centerFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+#aboutButton:hover {
+    border: 2px solid var(--about-color);
+    color: var(--about-color);
+    background-color: white;
+}
+
+#projectsButton:hover {
+    border: 2px solid var(--projects-color);
+    color: var(--projects-color);
+    background-color: white;
+}
+
+#resumeButton:hover {
+    border: 2px solid var(--resume-color);
+    color: var(--resume-color);
+    background-color: white;
+}
+
+#aboutButton {
+    background-color: var(--about-color);
+}
+
+#projectsButton {
+    background-color: var(--projects-color);
+}
+
+#resumeButton {
+    background-color: var(--resume-color);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 55rem;
+}
+
+.button {
+    color: white;
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100px;
+    width: 80%;
+    margin: 30px 0;
+}
+
+#aboutBox {
+    border: 2px solid var(--about-color);
+}
+
+#projectsBox {
+    border: 2px solid var(--projects-color);
+}
+
+#resumeBox {
+    border: 2px solid var(--resume-color);
+}
+
+.textbox {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50rem;
+    line-height: 1.6;
+}
+
+.textbox h2 {
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--main-color);
+    font-size: 1.2em;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.textbox p {
+    margin-bottom: 1em;
+}
+
+.showcaseBox {
+    display: flex;
+    padding: 10px;
+}
+
+.showcaseBox img {
+    flex: 4;
+    width: 200px;
+    height: 400px;
+    padding: 5px;
+}
+
+.showcaseBox div {
+    flex: 6;
+    padding: 5px;
+}
+
+.showcaseBox h2, .showcaseBox p {
+    max-width: 100%;
+    overflow: visible;
+}
+
+.resumeBox {
+    border: 2px solid var(--resume-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.resumeBox h2 {
+    color: var(--resume-color);
+    margin-bottom: 10px;
+}
+
+.resumeBox a {
+    color: black;
+    text-decoration: underline;
+}
